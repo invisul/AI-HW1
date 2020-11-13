@@ -6,7 +6,8 @@ import numpy as np
 from typing import List, Union, Optional
 
 # Load the streets map
-streets_map = StreetsMap.load_from_csv(Consts.get_data_file_path("tlv_streets_map.csv"))
+streets_map = StreetsMap.load_from_csv\
+    (Consts.get_data_file_path("tlv_streets_map.csv"))
 
 # Make sure that the whole execution is deterministic.
 # This is important, because we expect to get the exact same results
