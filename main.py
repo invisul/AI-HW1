@@ -108,12 +108,25 @@ def toy_map_problem_experiments():
     #       solve the same `toy_map_problem` with it and print the results (as before).
     # Notice: AStar constructor receives the heuristic *type* (ex: `MyHeuristicClass`),
     #         and NOT an instance of the heuristic (eg: not `MyHeuristicClass()`).
-    exit()  # TODO: remove!
+    #exit()  # TODO: remove!
+
+    my_a_star = AStar(NullHeuristic)
+    res = my_a_star.solve_problem(toy_map_problem)
+    print(res)
+    # Ex.13
+    # TODO: create an instance of `AStar` with the `AirDistHeuristic`,
+    #       solve the same `toy_map_problem` with it and print the results (as before).
+    #exit()  # TODO: remove!
+
+    my_astar = AStar(AirDistHeuristic)
+    res = my_astar.solve_problem(toy_map_problem)
+    print(res)
+    # Ex.15
 
     # Ex.13
     # TODO: create an instance of `AStar` with the `AirDistHeuristic`,
     #       solve the same `toy_map_problem` with it and print the results (as before).
-    exit()  # TODO: remove!
+   # exit()  # TODO: remove!
 
     # Ex.15
     # TODO:

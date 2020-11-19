@@ -20,5 +20,6 @@ class AirDistHeuristic(HeuristicFunction):
         """
         assert isinstance(self.problem, MapProblem)
         assert isinstance(state, MapState)
-
-        raise NotImplementedError  # TODO: remove this line!
+        map=self.problem.streets_map
+        return map[state.junction_id].calc_air_distance_from(map[self.problem.target_junction_id])
+        # raise NotImplementedError  # TODO: remove this line!
